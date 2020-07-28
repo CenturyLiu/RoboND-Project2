@@ -8,8 +8,8 @@
       <updateRate>10</updateRate>
       <leftJoint>left_wheel_hinge</leftJoint>
       <rightJoint>right_wheel_hinge</rightJoint>
-      <wheelSeparation>0.4</wheelSeparation>
-      <wheelDiameter>0.2</wheelDiameter>
+      <wheelSeparation>0.9</wheelSeparation>
+      <wheelDiameter>0.4</wheelDiameter>
       <torque>10</torque>
       <commandTopic>cmd_vel</commandTopic> <!--topic is actually /cmd_vel -->
       <odometryTopic>odom</odometryTopic>
