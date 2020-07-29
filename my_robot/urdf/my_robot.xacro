@@ -11,11 +11,27 @@
     <material name="green">
         <color rgba="0 0.8 0 1"/>
     </material>
+    <material name="white">
+        <color rgba="1.0 1.0 1.0 1"/>
+    </material>
     
     <!-- Include plugins-->
     <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
 
-    <!-- link and joints definition -->
+    <!-- Include arm definition file-->
+    <xacro:include filename="$(find my_robot)/urdf/arm.xacro" />
+
+    <!-- Include ball container file -->
+    <xacro:include filename="$(find my_robot)/urdf/ball_container.xacro" />
+
+    <!-- create the left and right arm-->
+    <arm lr="left" tY =  "-1" />
+    <arm lr="right" tY = "1" />
+
+    <!-- create ball container-->
+    <ball_container/>
+
+    <!-- link and joints definition of the robot chassis and wheel-->
 
     <link name="robot_footprint"></link>
 

@@ -57,7 +57,8 @@ find_package(catkin REQUIRED COMPONENTS
  add_service_files(
    FILES
    DriveToTarget.srv
-#   Service2.srv
+   ArmToTarget.srv
+   LidToTarget.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -216,3 +217,11 @@ add_dependencies(drive_bot ball_chaser_generate_messages_cpp)
 add_executable(process_image src/process_image.cpp)
 target_link_libraries(process_image ${catkin_LIBRARIES})
 add_dependencies(process_image ball_chaser_generate_messages_cpp)
+
+add_executable(move_arm src/move_arm.cpp)
+target_link_libraries(move_arm ${catkin_LIBRARIES})
+add_dependencies(move_arm ball_chaser_generate_messages_cpp)
+
+add_executable(move_lid src/move_lid.cpp)
+target_link_libraries(move_lid ${catkin_LIBRARIES})
+add_dependencies(move_lid ball_chaser_generate_messages_cpp)

@@ -1,0 +1,4 @@
+float64 left_lid
+float64 right_lid
+---
+string msg_feedback

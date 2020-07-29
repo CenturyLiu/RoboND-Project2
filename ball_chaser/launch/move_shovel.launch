@@ -1,0 +1,22 @@
+<launch>
+
+
+  <node name="move_arm" type = "move_arm" pkg = "ball_chaser" output = "screen">
+      <rosparam>
+          min_left_arm_angle: -0.785
+          max_left_arm_angle: 1.5707
+          min_right_arm_angle: -0.785
+          max_right_arm_angle: 1.5707
+      </rosparam>
+  </node>
+
+  <node name="move_lid" type = "move_lid" pkg = "ball_chaser" output = "screen">
+      <rosparam>
+          min_left_lid_pos: -0.4
+          max_left_lid_pos: 0.0
+          min_right_lid_pos: -0.4
+          max_right_lid_pos: 0.0
+      </rosparam>
+  </node>
+
+</launch>

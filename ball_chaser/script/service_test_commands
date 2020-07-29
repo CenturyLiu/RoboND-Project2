@@ -1,0 +1,11 @@
+rosservice call /ball_chaser/move_arm "left_arm: 1.5707
+right_arm: 1.5707"
+
+rosservice call /ball_chaser/move_arm "left_arm: -1.5707
+right_arm: -1.5707"
+
+rosservice call /ball_chaser/move_lid "left_lid: -0.4
+right_lid: -0.4"
+
+rosservice call /ball_chaser/move_lid "left_lid: 0.0
+right_lid: 0.0"

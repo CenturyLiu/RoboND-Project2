@@ -33,17 +33,17 @@ namespace gazebo
 
       if(this->counter < 10000){
           // Apply a small linear velocity to the model.
-          this->model->SetLinearVel(ignition::math::Vector3d(-0.3, 0, 0));
+          this->model->SetLinearVel(ignition::math::Vector3d(-0.1, 0, 0));
           }
       else if(this->counter >= 10000 && this->counter < 20000){
           // Apply a small linear velocity to the model.
-          this->model->SetLinearVel(ignition::math::Vector3d(0, -0.3, 0));
+          this->model->SetLinearVel(ignition::math::Vector3d(0, -0.1, 0));
            }
       else if(this->counter >= 20000 && this->counter < 30000){
-          this->model->SetLinearVel(ignition::math::Vector3d( 0.3, 0, 0));
+          this->model->SetLinearVel(ignition::math::Vector3d( 0.1, 0, 0));
       }
       else{
-          this->model->SetLinearVel(ignition::math::Vector3d(0, 0.3, 0));
+          this->model->SetLinearVel(ignition::math::Vector3d(0, 0.1, 0));
       }
        this->counter = (this->counter + 1) % 40000;
     }

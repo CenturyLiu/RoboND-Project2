@@ -8,4 +8,7 @@
   <node name="process_image" type="process_image" pkg="ball_chaser" output="screen">
   </node>
 
+ <!-- Enable services for moving the shovel -->
+ <include file = "$(find ball_chaser)/launch/move_shovel.launch"/>
+  
 </launch>

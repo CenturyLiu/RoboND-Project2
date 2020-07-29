@@ -1,0 +1,4 @@
+float64 left_arm
+float64 right_arm
+---
+string msg_feedback
